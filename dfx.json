@@ -1,0 +1,33 @@
+{
+  "canisters": {
+    "motokobootcamp2023_coreproject_dao": {
+      "main": "src/motokobootcamp2023_coreproject_backend/dao.mo",
+      "type": "motoko"
+    },
+    "motokobootcamp2023_coreproject_webpage": {
+      "main": "src/motokobootcamp2023_coreproject_backend/webpage.mo",
+      "type": "motoko"
+    },
+    "motokobootcamp2023_coreproject_frontend": {
+      "dependencies": [
+        "motokobootcamp2023_coreproject_dao",
+        "motokobootcamp2023_coreproject_webpage"
+      ],
+      "frontend": {
+        "entrypoint": "src/motokobootcamp2023_coreproject_frontend/src/index.html"
+      },
+      "source": [
+        "src/motokobootcamp2023_coreproject_frontend/assets",
+        "dist/motokobootcamp2023_coreproject_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
